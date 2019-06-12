@@ -1,0 +1,11 @@
+for algoritmo in "QC" "QPE" "QM3" "QI1" "QI5" "QI10" "QNR"; 
+do
+	for tipo_vet in "Ale" "OrdC" "OrdD"; 
+	do
+		for tamanho in {50000..500000..50000}; 
+		do
+			echo $algoritmo $tipo_vet $tamanho
+			./tp2 $algoritmo $tipo_vet $tamanho > arquivo.txt
+		done;
+	done;
+done;
